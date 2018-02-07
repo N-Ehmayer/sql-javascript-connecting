@@ -34,6 +34,7 @@ function queryFamousPeopleByName(name) {
     .asCallback((err, rows) => {
       displayFamousQuery(rows);
     });
+  knex.destroy();
 };
 
 
